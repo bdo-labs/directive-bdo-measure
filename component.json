@@ -1,0 +1,9 @@
+{
+  "name": "bdo-measure",
+  "repo": "bdo-labs/directive-bdo-measure",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": ["lib/index.js"],
+  "templates": ["lib/template.html"]
+}

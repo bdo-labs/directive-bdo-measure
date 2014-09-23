@@ -1,0 +1,20 @@
+<!-- bdo-measure.html -->
+<table>
+  <thead ng-click="expand=!expand">
+    <tr>
+      <th width="15%"><icon name="{{measure.trend}}" ng-class="'status-'+measure.status"></icon></th>
+      <th width="50%">{{measure.title}}</th>
+      <th>{{measure.value}}</th>
+      <th>{{measure.target}}</th>
+    </tr>
+  </thead>
+  <tbody ng-show="expand">
+    <tr ng-repeat="measure in measure.measures">
+      <td><a ng-href="{{base}}/measures/{{measure.title}}"><icon name="{{measure.trend}}" ng-class="'status-'+measure.status"></icon></a></td>
+      <td><a ng-href="{{base}}/measures/{{measure.title}}">{{measure.title}}</a></td>
+      <td slot="{{measure.value}}"></td>
+      <td slot="{{measure.target}}"></td>
+    </tr>
+  </tbody>
+</table>
+<!-- End bdo-measure.html -->
